@@ -69,35 +69,6 @@ for i = 1:people
     end
 
     % 存成csv
-    writematrix(agreement, string(RAW{1,1}(1, i+1)) + "_agreement.csv");
-%     ww = W == goldenWake;
-%     wn1 = W == goldenN1;
-%     wn2 = W == goldenN2;
-%     wn3 = W == goldenN3;
-%     wrem = W == goldenRem;
-% 
-%     n1w = N1 == goldenWake;
-%     n1n1 = N1 == goldenN1;
-%     n1n2 = N1 == goldenN2;
-%     n1n3 = N1 == goldenN3;
-%     n1rem = N1 == goldenRem;
-% 
-%     n2w = N2 == goldenWake;
-%     n2n1 = N2 == goldenN1;
-%     n2n2 = N2 == goldenN2;
-%     n2n3 = N2 == goldenN3;
-%     n2rem = N2 == goldenRem;
-% 
-%     n3w = N3 == goldenWake;
-%     n3n1 = N3 == goldenN1;
-%     n3n2 = N3 == goldenN2;
-%     n3n3 = N3 == goldenN3;
-%     n3rem = N3 == goldenRem;
-% 
-%     remw = R == goldenWake;
-%     remn1 = R == goldenN1;
-%     remn2 = R == goldenN2;
-%     remn3 = R == goldenN3;
-%     remrem = R == goldenRem;
+    writematrix(agreement, string(RAW{1,1}(1, i+1)) + "_stage_agreement.csv");
 
 end
