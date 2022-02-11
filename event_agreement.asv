@@ -1,0 +1,32 @@
+close all;
+clear;
+
+xlsFile = './20191018.xlsx';
+[fileType, sheets] = xlsfinfo(xlsFile);
+
+% load epoch and event data
+[NUM{1},TXT{1},RAW{1}] = xlsread(xlsFile, string(sheets(1)));
+epoch = length(RAW{1,1}(:,1))-1;
+[NUM{1},TXT{1},RAW{1}] = xlsread(xlsFile, string(sheets(2)));
+
+people = unique(RAW{1, 1}(2:end, 1));
+
+% golden是people中的第幾個
+number = 7;
+goldca = zeros(epoch, 1);
+goldoa = zeros(epoch, 1);
+goldma = zeros(epoch, 1);
+goldoh = zeros(epoch, 1);
+for i = 2:length(RAW{1, 1})
+    if(RAW{i, 1} == people(num))
+end
+
+for i = 1:length(people)
+
+    % 計算
+    ca = zeros(epoch, 1);
+    oa = zeros(epoch, 1);
+    ma = zeros(epoch, 1);
+    oh = zeros(epoch, 1);
+
+end
